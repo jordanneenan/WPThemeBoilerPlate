@@ -20,7 +20,7 @@
             wp_enqueue_script( 'Main', get_template_directory_uri() . '/js/main.js', array('jquery'), '1.0', true );
         }
 
-        add_action( 'wp_enqueue_scripts', 'pioneer_scripts' );
+        add_action( 'wp_enqueue_scripts', 'theme_scripts' );
 ?>
 
         <!--[if lt IE 9]>
