@@ -1,7 +1,15 @@
 @import 'normalize';
+@import 'base';
 @import 'colours';
-@import 'global';
-@import 'fonts';
+@import 'typography';
+@import 'layout';
+
+
+/* Components */
 @import 'header';
 @import 'nav';
-@import 'footer';
+
+/* Specifcs */
+@import 'home';
+
+/* Vendor */
