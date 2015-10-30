@@ -4,7 +4,6 @@
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title><?php wp_title(); ?> - <?php bloginfo( 'name' ); ?></title>
-        <meta name="description" content="">
         <meta name="viewport" content="user-scalable=0, width=device-width, initial-scale=1.0,  minimum-scale=1.0, maximum-scale=1.0">
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
