@@ -1,4 +1,4 @@
-@import 'normalize';
+@import 'vendor/normalize';
 @import 'base';
 @import 'colours';
 @import 'typography';
@@ -6,10 +6,10 @@
 
 
 /* Components */
-@import 'header';
-@import 'nav';
+@import 'components/header';
+@import 'components/nav';
 
 /* Specifcs */
-@import 'home';
+@import 'specifics/home';
 
 /* Vendor */
