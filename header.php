@@ -9,18 +9,13 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
-<?php
-        function theme_scripts() {
-            wp_enqueue_style( 'Theme stylesheet', get_stylesheet_uri() );
-            wp_enqueue_style( 'Main stylesheet', get_template_directory_uri() . '/css/style.css', array(), '1.0', false );
+        <?php get_stylesheet_uri(); ?>
+        <link rel='stylesheet' id='Main stylesheet-css'  href='<?php echo get_template_directory_uri(); ?>/css/style.css?v=1.0' type='text/css' />
 
-            wp_enqueue_script( 'modernizr', get_template_directory_uri() . '/js/vendor/modernizr-2.8.3.min.js', array(), '1.0', false );
-            wp_enqueue_script( 'Plugins', get_template_directory_uri() . '/js/plugins.js', array('jquery'), '1.0', true );
-            wp_enqueue_script( 'Main', get_template_directory_uri() . '/js/main.js', array('jquery'), '1.0', true );
-        }
-
-        add_action( 'wp_enqueue_scripts', 'theme_scripts' );
-?>
+        <script type='text/javascript' src='<?php echo get_template_directory_uri(); ?>/js/vendor/jquery-1.11.3.min.js'></script>
+        <script type='text/javascript' src='<?php echo get_template_directory_uri(); ?>/js/vendor/modernizr-2.8.3.min.js'></script>
+        <script type='text/javascript' src='<?php echo get_template_directory_uri(); ?>/js/main.js'></script>
+        <script type='text/javascript' src='<?php echo get_template_directory_uri(); ?>/js/plugins.js'></script>
 
         <!--[if lt IE 9]>
         <script src="http://html5shiv-printshiv.googlecode.com/svn/trunk/html5shiv-printshiv.js"></script>
