@@ -1,2 +1,15 @@
-$white: #fff;
-$black: #231f20;
+//Colours
+$primaryHighlight: lighten( $primary, 10%);
+$primaryShadow: darken( $primary, 10%);
+
+$secondaryHighlight: lighten( $secondary, 10%);
+$secondaryShadow: darken( $secondary, 10%);
+
+$tertiaryHighlight: lighten( $tertiary, 10%);
+$tertiaryShadow: darken( $tertiary, 10%);
+
+$red: #A64740;
+$green: #5E6E5E;
+$blue: #134C57;
+$purple: #5C5A75;
+$orange: #c3713b;

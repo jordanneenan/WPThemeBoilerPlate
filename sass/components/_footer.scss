@@ -1,0 +1,192 @@
+footer{
+	background-color: #fff;
+	padding: 90px 70px 70px;
+}
+
+.footer-wrapper {
+	position: relative;
+	padding-bottom: 20px;
+
+	.left{
+		width: 258px;
+		float: left;
+
+		&.address_container{
+			position: absolute;
+			height: 100%;
+
+			.address{
+				position: absolute;
+				bottom: 20px;
+
+				p{
+					font-size: 18px;
+					margin-bottom: 12px;
+
+					&:last-child{
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+	}
+
+	.right{
+		position: relative;
+		width: 500px;
+		float: right;
+
+		.nav{
+			width: 180px;
+			float: left;
+		}
+
+		.social, .form{
+			width: 288px;
+			float: right;
+		}
+
+		.form{
+			p{
+				font-size: 18px;
+				padding-bottom: 34px;
+			}
+		}
+
+		.top_link{
+			position: absolute;
+			height: 100%;
+
+			ul{
+				position: absolute;
+				bottom: 0;
+
+				a{
+					padding-bottom: 0 !important;
+				}
+			}
+		}
+	}
+
+	.nav{
+		li{
+			list-style: none;
+
+			a{
+				text-decoration: underline;
+				padding-bottom: 14px;
+				display: block;
+				font-size: 18px;
+			}
+		}
+	}
+}
+
+.social{
+	a{
+		padding-right: 24px;
+	}
+}
+
+@media only screen and (max-width:920px){
+	footer{
+		padding: 70px 20px 50px;
+	}
+
+	.footer-wrapper {
+		padding-bottom: 20px;
+
+		.left{
+			width: 228px;
+
+			&.address_container{
+				.address{
+					p{
+						font-size: 16px;
+					}
+				}
+			}
+		}
+
+		.right{
+			width: 400px;
+
+			.nav{
+				width: 100px;
+			}
+
+			.social, .form{
+				width: 240px;
+			}
+
+			.form{
+				p{
+					font-size: 18px;
+					padding-bottom: 24px;
+				}
+			}
+		}
+
+		.nav{
+			li{
+				a{
+					padding-bottom: 12px;
+				}
+			}
+		}
+	}
+
+	.social{
+		a{
+			padding-right: 20px;
+		}
+	}
+}
+
+@media only screen and (max-width:670px){
+	.footer-wrapper {
+		.mob_hide{
+			display: none;
+		}
+
+		.left, .right{
+			width: 50%;
+
+			.social, .form{
+				width: 100%;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width:480px){
+	.footer-wrapper {
+		.left, .right{
+			width: 100%;
+
+				&.address_container{
+				position: relative;
+				height: auto;
+
+				.address{
+					position: relative;
+					bottom: auto;
+					padding-bottom: 40px;
+
+					p{
+						font-size: 18px;
+					}
+				}
+			}
+		}
+
+		.social{
+			padding-top: 30px;
+
+			a{
+				padding-right: 16px;
+			}
+		}
+	}
+}
+

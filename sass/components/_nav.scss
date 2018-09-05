@@ -1,0 +1,167 @@
+nav{
+	float: right;
+	margin-right: 34px;
+
+	ul{
+		padding: 0;
+
+		&:after{
+			visibility: hidden;
+			display: block;
+			font-size: 0;
+			content: " ";
+			clear: both;
+			height: 0;
+		}
+	}
+
+	li{
+		float: left;
+	}
+
+	a{
+		color: $white;
+		font-size: 22px;
+		font-weight: 300;
+		display: block;
+	    transition: all 400ms ease;
+    	transition-property: height, background, color, opacity;
+    	position: relative;
+		margin: 0 24px;
+		padding: 41px 1px 20px;
+		font-family: "LL Akkurat Light Web";
+
+		&::after{
+			position: absolute;
+			top: -12px;
+			content: " ";
+			display: block;
+			width: 0px;
+			height: 0px;
+			left: 50%;
+			margin-left: 0;
+			border-radius: 15px;
+			background-color: $white;
+			transition: all 0.3s ease;
+			opacity: 1;
+		}
+
+		&:hover{
+			color: $white;
+
+			&::after{
+				width: 24px;
+				height: 24px;
+				margin-left: -12px;
+			}
+		}
+
+		&:active::after{
+			width: 30px;
+			height: 30px;
+			margin-left: -15px;
+			top: -15px;
+			opacity: 0.7;
+		}
+	}
+
+	.current-menu-item a{
+		&:hover{
+			&::after{
+				width: 24px;
+				height: 24px;
+				margin-left: -12px;
+			}
+		}
+	}
+}
+
+.not-home{
+	nav{
+		a{
+			color: $black;
+
+			&::after{
+				background-color: $black;
+			}
+
+			&:hover{
+				color: $black;
+			}
+		}
+
+		.current-menu-item a{
+			&::after{
+				width: 24px;
+				height: 24px;
+				top: -12px;
+				margin-left: -12px;
+			}
+		}
+	}
+}
+
+.nav_grad{
+	display: none;
+}
+
+.solid_bg{
+	nav{
+		a:hover, .current-menu-item a{
+			background-color: $grey;
+			opacity: 1;
+		}
+	}
+}
+
+@media only screen and (max-width: $navBreak ){
+	.slide_down, .slide_down.underline{
+		nav{
+			float: none;
+			text-align: center;
+			background-color: $primaryShadow;
+			margin: 0;
+
+			ul{
+				display: none;
+				width: 100%;
+				padding: 14px 0;
+			}
+
+			li{
+				float: none;
+			}
+
+			a{
+				margin: 0;
+				padding: 14px 0;
+				font-size: 1.1em;
+
+				&:after{
+					display: none !important;
+				}
+			}
+
+			.current-menu-item a, a:hover{
+				opacity: 1;
+				background-color: $secondary;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: ($navBreak + 1) ){
+	.slide_down{
+		nav{
+			ul{
+				display: block !important;
+			}
+		}
+	}
+
+	.page-nav{
+		ul{
+			min-width: 0 !important;
+		}
+	}
+}

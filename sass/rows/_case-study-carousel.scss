@@ -1,0 +1,261 @@
+.case_study_carousel_row{
+	.row_heading{
+		height: 0;
+	}
+}
+
+.case_studies_carousel{
+	padding: 80px 20px 160px;
+	width: 100%;
+	max-width: 1300px;
+	margin: 0 auto;
+
+	.case_study_slide{
+		outline: none !important;
+		
+		.inner{
+			width: 100%;
+			min-height: 1px;
+			max-width: 1044px;
+			margin: 0 auto;
+		}
+	}
+
+	.image_wrapper{
+		position: relative;
+		overflow: hidden;
+		width: 648px;
+		height: 648px;
+		border-radius: 324px;
+		float: right;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		.image{
+			position: absolute;
+			top: -26px;
+			left: -26px;
+			width: 700px !important;
+			height: 700px !important;
+			background-size: cover !important;
+		}
+	}
+
+	.copy{
+		position: absolute;
+		padding-right: 700px;
+
+		h3{
+			font-size: 50px;
+		}
+
+		.button{
+			margin-top: 35px;
+		}
+	}
+
+	.carousel_arrow{
+		width: 47px;
+		height: 20px;
+	}
+
+	.case_study_cats{
+		position: absolute;
+		bottom: 0;
+		padding: 0;
+
+		li{
+			list-style: none;
+			padding: 0;
+			border-bottom: 1px solid $red;
+			min-width: 180px;
+
+			&:last-child{
+				border: none;
+			}
+		}
+
+		a{
+			color: $black;
+			font-size: 18px;
+			padding: 10px 0;
+			display: block;
+
+			&:hover{
+				//background-color: $red;
+				//color: $white;
+				padding-left: 10px;
+			}
+		}
+	}
+
+	.red{
+		h3{color: $red;}
+		.button:hover{
+			background-color: $red;
+			border-color: $red;
+		}
+	}
+	.green{
+		h3{color: $green;}
+		.button:hover{
+			background-color: $green;
+			border-color: $green;
+		}
+		.case_study_cats{
+			li{border-color: $green}
+			a:hover{
+				//background-color: $green;
+			}
+		}
+	}
+	.blue{
+		h3{color: $blue;}
+		.button:hover{
+			background-color: $blue;
+			border-color: $blue;
+		}
+		.case_study_cats{
+			li{border-color: $blue}
+			a:hover{
+				//background-color: $blue;
+			}
+		}
+	}
+	.purple{
+		h3{color: $purple;}
+		.button:hover{
+			background-color: $purple;
+			border-color: $purple;
+		}
+		.case_study_cats{
+			li{border-color: $purple}
+			a:hover{
+				//background-color: $purple;
+			}
+		}
+	}
+	.orange{
+		h3{color: $orange;}
+		.button:hover{
+			background-color: $orange;
+			border-color: $orange;
+		}
+		.case_study_cats{
+			li{border-color: $orange}
+			a:hover{
+				//background-color: $orange;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width:1220px){
+	.case_studies_carousel{
+		.image_wrapper{
+			width: 500px;
+			height: 500px;
+			margin-right: 70px;
+
+			.image{
+				top: -50px;
+				left: -50px;
+				width: 600px !important;
+				height: 600px !important;
+			}
+		}
+
+		.copy{
+			padding-right: 590px;
+			padding-left: 70px;
+			position: relative;
+
+			h3{
+				font-size: 38px;
+			}
+		}
+
+		.case_study_cats{
+			position: relative;
+			bottom: auto;
+			left: auto;
+			margin-top: 30px;
+			padding-left: 70px;
+
+			li{
+				max-width: 180px;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width:950px){
+	.case_studies_carousel{
+		.image_wrapper{
+			width: 400px;
+			height: 400px;
+			margin-right: 70px;
+
+			.image{
+				top: -25px;
+				left: -25px;
+				width: 450px !important;
+				height: 450px !important;
+			}
+		}
+
+		.copy{
+			padding-top: 60px !important;
+			padding-right: 490px;
+		}
+
+		.case_study_cats{
+			font-size: 16px;
+			li{
+				max-width: 140px;
+				min-width: 140px;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width:767px){
+	.case_studies_carousel{
+		padding: 80px 20px 80px;
+
+		.image_wrapper{
+			width: 200px;
+			height: 200px;
+			float: none;
+			margin: 60px auto 0;
+
+			.image{
+				top: -25px;
+				left: -25px;
+				width: 250px !important;
+				height: 250px !important;
+			}
+		}
+
+		.copy{
+			padding-right: 70px;
+			padding-left: 70px;
+			padding-top: 30px !important;
+			position: relative;
+			text-align: center;
+		}
+
+		.case_study_cats{
+			text-align: center;
+			padding: 0 70px;
+
+			li{
+				max-width: 200px;
+				min-width: 0;
+				margin: 0 auto;
+			}
+		}
+	}
+}

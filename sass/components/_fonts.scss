@@ -1,0 +1,34 @@
+/* Complete */
+
+@font-face {
+    font-family: "LL Akkurat Regular Web";
+    src: url("../fonts/lineto-akkurat-regular.eot");
+    src: url("../fonts/lineto-akkurat-regular.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/lineto-akkurat-regular.woff2") format("woff2"),
+         url("../fonts/lineto-akkurat-regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "LL Akkurat Light Web";
+    src: url("../fonts/akkurat-light.eot");
+    src: url("../fonts/akkurat-light.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/akkurat-light.woff2") format("woff2"),
+         url("../fonts/akkurat-light.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Subsetted */
+
+@font-face {
+    font-family: "LL Akkurat Regular Sub";
+    src: url("../fonts/fonts_subsetted/lineto-akkurat-regular.eot");
+    src: url("../fonts/fonts_subsetted/lineto-akkurat-regular.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/fonts_subsetted/lineto-akkurat-regular.woff2") format("woff2"),
+         url("../fonts/fonts_subsetted/lineto-akkurat-regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}

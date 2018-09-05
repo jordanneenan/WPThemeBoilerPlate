@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="26px" viewBox="0 0 14 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-twitter</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="01_Home-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01-Homepage" transform="translate(-1090.000000, -1950.000000)" fill="#5E6E5E">
+            <path d="M1099.08656,1976 L1099.08656,1964.14032 L1103.21363,1964.14032 L1103.83241,1959.51865 L1099.08656,1959.51865 L1099.08656,1956.56661 C1099.08656,1955.22913 1099.47145,1954.31794 1101.46225,1954.31794 L1104,1954.31616 L1104,1950.18295 C1103.55985,1950.12611 1102.05341,1950 1100.30203,1950 C1096.64273,1950 1094.13812,1952.15453 1094.13812,1956.11012 L1094.13812,1959.51865 L1090,1959.51865 L1090,1964.14032 L1094.13812,1964.14032 L1094.13812,1976 L1099.08656,1976 Z" id="icon-twitter"></path>
+        </g>
+    </g>
+</svg>

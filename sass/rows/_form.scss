@@ -1,0 +1,177 @@
+.form_row{
+	text-align: center;
+	padding: 60px 0;
+
+	.copy{
+		max-width: 550px;
+		margin: 0 auto;
+
+		h2{
+			margin: 0 0 20px;
+		}
+
+		p{
+			margin: 0 0 40px;
+			font-size: 20px;
+			font-weight: 300;
+		}
+	}
+}
+
+form{
+	max-width: 550px !important;
+	margin: 0 auto;
+	position: relative;
+
+	input, textarea{
+		border: 0;
+		background-color: #F3F0EE;
+		padding: 13px 10px !important;
+		@include placeholderColor(#828282);
+		color: $black;
+		font-size: 18px;
+		line-height: 1 !important;
+		width: 100%;
+	}
+}
+
+.gform_wrapper ul.gform_fields{
+	padding: 0 !important;
+}
+
+.gform_wrapper ul.gform_fields li.gfield{
+	padding-right: 0 !important;
+	margin: 0 0 12px !important;
+	list-style: none;
+}
+
+.gform_wrapper .gform_body{
+	width: 100% !important;
+}
+
+.gform_wrapper.gform_validation_error .gform_body ul li.gfield.gfield_error.gfield_visibility_visible{
+	max-width: 100% !important;
+}
+
+.gfield_label{
+	display: none !important;
+}
+
+.gform_confirmation_message{
+	max-width: 550px;
+	padding: 20px;
+	color: $darkGrey;
+	text-align: center;
+	margin: 0 auto;
+	background-color: $lightGrey;
+	border: 1px solid $grey;
+	font-size: 20px;
+	line-height: 1.4em;
+}
+
+.gform_button{
+	transition: all $transitionTime ease;
+	border: 1px solid $black;
+	padding: 14px 20px !important;
+	display: block !important;
+	width: 100% !important;
+	max-width: 180px !important;
+	margin: 24px 0 0 !important;
+	color: $black;
+	text-align: center;
+	background-color: transparent;
+
+	&:hover{
+		background-color: $black;
+		color: $white;
+	}
+}
+
+//Insert the following html with dev tools after the submit button to show the spinner
+//<img id="gform_ajax_spinner_1" class="gform_ajax_spinner" src="/wp-content/plugins/gravityforms/images/spinner.gif" alt="" />
+.gform_ajax_spinner{
+	display: block;
+	position: absolute;
+	bottom: 17px;
+	right: 50%;
+	margin-right: -75px;
+	background-color: $white;
+	border-radius: 30px;
+	width: 35px;
+	height: 35px;
+	text-align: center;
+	padding: 10px 10px 10px 0;
+}
+
+.gform_wrapper li.gfield.gfield_error{
+	border: 0 !important;
+	background-color: $white !important;
+	background-color: transparent !important;
+	padding: 0 0 8px !important;
+}
+
+.gform_wrapper li.gfield.gfield_error, .gform_wrapper .field_description_below .gfield_description.validation_message{
+	padding: 4px 0 0 30px;
+}
+
+.gform_wrapper .field_description_below .gfield_description.validation_message{
+	background: url("../img/icons/exclamationmark.svg") 9px 8px no-repeat;
+	background-size: 14px 14px;
+	color: #b5422f;
+}
+
+.validation_error{
+	color: #b5422f !important;
+	border-color: #b5422f !important;
+}
+
+.gform_wrapper li.gfield_error input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]), .gform_wrapper li.gfield_error textarea, .gfield_error .selectric{
+	border-color: #b5422f !important;
+}
+
+.form_row.dark{
+	background-color: $black;
+	color: $white;
+
+	.gform_button{
+		transition: all $transitionTime ease;
+		border: 1px solid $white;
+		padding: 13px 20px !important;
+		display: block !important;
+		width: 100% !important;
+		max-width: 265px !important;
+		margin: 0 auto 0 !important;
+		color: $white;
+		text-transform: uppercase;
+		text-align: center;
+		background-color: transparent;
+
+		&:hover{
+			background-color: $white;
+			color: $black;
+		}
+	}
+
+	form{
+		max-width: 550px;
+		margin: 0 auto;
+
+		input, textarea{
+			border: 0;
+			background-color: $darkGrey;
+			padding: 14px 10px !important;
+			@include placeholderColor($lightGrey);
+			color: $white;
+		}
+
+		.validation_error, .validation_message{
+			color: $white;
+			padding: 5px 10px;
+		}
+
+		.gfield_error{
+			border-color: $white !important;
+			background-color: rgba(255,255,255,0.4) !important;
+		}
+	}
+}

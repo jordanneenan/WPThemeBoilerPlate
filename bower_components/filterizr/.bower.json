@@ -1,0 +1,14 @@
+{
+  "name": "filterizr",
+  "homepage": "https://github.com/giotiskl/Filterizr",
+  "version": "1.3.5",
+  "_release": "1.3.5",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.3.5",
+    "commit": "ce0f96b741a4b0bd7276a52a2fb6716cf0b9f087"
+  },
+  "_source": "https://github.com/giotiskl/Filterizr.git",
+  "_target": "^1.3.5",
+  "_originalSource": "filterizr"
+}

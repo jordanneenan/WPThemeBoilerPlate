@@ -1,0 +1,55 @@
+header{
+	color: #E7E2DD;
+	padding: 0 10px;
+}
+
+.absolute_pos{
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+
+.logo{
+	float: left;
+	display: inline-block;
+	margin: 20px 0 0 60px;
+	transition: all 400ms ease;
+	font-weight: bold;
+	font-size: 3.8rem;
+
+	img{
+		height: 45px;
+	}
+
+	a{
+		transition: all 0.2 ease;
+		opacity: 1;
+
+		&:hover{
+			opacity: 0.8;
+		}
+	}
+}
+
+@media only screen and (max-width: $navBreak){
+
+	header{
+		padding: 20px 0 0;
+	}
+
+	.logo{
+		float: none;
+		margin: 0 0 15px 20px;
+		
+		a img{
+			width: auto;
+			height: 35px;
+			display: block;
+		}
+	}
+}
+
+
+

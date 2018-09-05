@@ -1,0 +1,1 @@
+$(document).ready(function(){var r=$(".filtr-container").filterizr({})});

@@ -1,0 +1,76 @@
+.page_banner{
+	margin: 0 auto;
+	padding: 0 20px;
+
+	.image{
+		position: relative;
+		padding: 30px 50px 0 178px;
+
+		.img{
+			height: 660px;
+			background-size: cover !important;
+		}
+	}
+
+	h1{
+		position: absolute;
+		top: 50%;
+		left: 63px;
+		margin-top: -40px;
+		font-size: 80px;
+		font-weight: 200;
+	}
+}
+
+@media only screen and (max-width:1180px){
+	.page_banner{
+
+		.image{
+			.img{
+				height: 480px;
+			}
+		}
+
+		h1{
+			margin-top: -30px;
+			font-size: 60px;
+		}
+	}
+}
+
+@media only screen and (max-width:768px){
+	.page_banner{
+		.image{
+			padding: 30px 20px 0 80px;
+
+			.img{
+				height: 400px;
+			}
+		}
+
+		h1{
+			left: 20px;
+			margin-top: -25px;
+			font-size: 50px;
+		}
+	}
+}
+
+@media only screen and (max-width:550px){
+	.page_banner{
+		.image{
+			padding: 30px 0 0 0;
+
+			.img{
+				height: 280px;
+			}
+		}
+
+		h1{
+			top: 0;
+			left: 20px;
+			margin-top: 30px;
+			font-size: 50px;
+		}
+	}
+}
